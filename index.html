@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            Violet: '#674BAF',
+            SoftMagenta: '#E882E8'
+          },
+          fontFamily: {
+            Poppins: ["'Poppins', sans-serif"],
+            OpenSans: ["'Open Sans', sans-serif"]
+          }
+        }
+      }
+    }
+  </script>
+  <script src="https://kit.fontawesome.com/f45ecfdbad.js" crossorigin="anonymous"></script>
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Huddle landing page with single introductory section</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="w-full h-full bg-Violet text-white font-OpenSans px-14 bg-cover" style="background-image: url(./images/bg-desktop.svg);">
+  <header class="w-full">
+    <nav class="mt-5 md:mt-10">
+      <img class="w-[7rem] md:w-[10rem]" src="./images/logo.svg" alt="logo">
+    </nav>
+  </header>
+  <main class="w-full flex flex-col  md:flex md:flex-row md:my-14">
+    <section class="md:w-1/2 ">
+      <img src="./images/illustration-mockups.svg" alt="illustration-mockups">
+    </section>
+    <section class="w-full md:w-1/2 mr-1 md:mr-25 px-12 my-5 md:text-left md:my-8 text-center">
+      <h1 class="font-Poppins text-4xl md:text-5xl font-bold leading-normal">Build The Community Your Fans Will Love</h1>
+      <p class="text-2xl md:text-lg mt-8 pr-5 md:pr-5"> Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
+        Create connections with your users as you engage in genuine discussion. 
+      </p>
+      <button class=" bg-white rounded-full text-Violet text-2xl md:text-base my-10 px-[8rem] py-4 md:px-12 md:py-2 hover:bg-SoftMagenta hover:text-white">Register</button>
+    </section>
+    <footer class="bottom-[8rem] right-[3rem] md:bottom-[3rem] md:right-[7rem] absolute">
+        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f border-2 border-white p-2 rounded-full hover:text-SoftMagenta"></i></a>
+        <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter border-2 border-white p-2 rounded-full hover:text-SoftMagenta"></i></a>
+        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram border-2 border-white p-2 rounded-full hover:text-SoftMagenta"></i></a>
+    </footer>
+  </main>
+</body>
+</html>
